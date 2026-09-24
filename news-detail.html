@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!-- ==============================================================================
+     [ ไฟล์หน้ารายละเอียดข่าวสาร: news-detail.html ]
+     ชื่อหน้า: รายละเอียดข่าวสารและบทความ (News Detail)
+     คำอธิบาย: หน้าสำหรับอ่านเนื้อหาข่าวสารฉบับเต็ม พร้อมบทความที่เกี่ยวข้องและปุ่มแชร์
+     ============================================================================== -->
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายละเอียดข่าวสาร | สมาพันธ์ SME ไทยสากล - ISME</title>
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .article-container {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr;
+      gap: 40px;
+    }
+
+    .article-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 35px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .article-cover {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      margin-bottom: 25px;
+    }
+
+    .article-content p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #334155;
+      margin-bottom: 18px;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
+
+    .article-content li {
+      margin-bottom: 10px;
+      font-size: 1.02rem;
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    .article-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .article-tag {
+      background: #eff6ff;
+      color: #2563eb;
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .sidebar-widget {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 25px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+      margin-bottom: 25px;
+    }
+
+    .widget-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .widget-news-item {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .widget-news-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .widget-news-thumb {
+      width: 75px;
+      height: 60px;
+      border-radius: var(--radius-sm);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .widget-news-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--primary);
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .widget-news-title:hover {
+      color: var(--accent-hover);
+    }
+
+    @media (max-width: 992px) {
+      .article-container {
+        grid-template-columns: 1fr;
+      }
+
+      .article-cover {
+        height: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-contact">
+        <div class="top-bar-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>โทร: 023999999</span>
+        </div>
+        <div class="top-bar-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>3186, 3188 ถนนลาดพร้าว แขวงคลองจั่น เขตบางกะปิ กรุงเทพฯ 10240</span>
+        </div>
+      </div>
+      <div class="top-bar-social">
+        <a href="https://www.facebook.com/thaismefederation" target="_blank" aria-label="Facebook"><i
+            class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@smethai" target="_blank" aria-label="YouTube"><i
+            class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@smethai" target="_blank" aria-label="TikTok"><i
+            class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo" title="สมาพันธ์ SME ไทยสากล">
+          <img src="assets/images/logo.jpg" alt="ISME สมาพันธ์ SME ไทยสากล">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> เกี่ยวกับสมาพันธ์</a>
+          </li>
+          <li><a href="news.html" class="nav-link active"><i class="fa-solid fa-newspaper"></i> กิจกรรมและข่าวสาร</a>
+          </li>
+          <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i> บริการสมาชิก</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="register.html" class="btn-primary">
+            <span>สมัครสมาชิก</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="เปิดเมนู">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/images/logo.jpg" alt="Logo" style="height: 44px;">
+      <button class="drawer-close" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+      <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> เกี่ยวกับสมาพันธ์</a></li>
+      <li><a href="news.html" class="nav-link active"><i class="fa-solid fa-newspaper"></i>
+          กิจกรรมและข่าวประชาสัมพันธ์</a></li>
+      <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i>
+          บริการสำหรับสมัครสมาชิก</a></li>
+      <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="register.html" class="btn-primary" style="width: 100%; justify-content: center;">
+        <span>สมัครสมาชิกสมาพันธ์</span>
+        <i class="fa-solid fa-user-plus"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Inner Page Hero -->
+  <section class="inner-page-hero">
+    <div class="container">
+      <div class="inner-hero-content">
+        <span class="inner-hero-tag" id="articleCategoryTag"><i class="fa-solid fa-newspaper"></i>
+          ข่าวสารสมาพันธ์</span>
+        <h1 class="inner-hero-title" id="articleHeroTitle" style="font-size: clamp(1.4rem, 3vw, 2.2rem);">
+          รายละเอียดข่าวสาร</h1>
+        <div class="inner-breadcrumb">
+          <a href="index.html"><i class="fa-solid fa-house"></i> หน้าหลัก</a>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+          <a href="news.html">กิจกรรมและข่าวประชาสัมพันธ์</a>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+          <span>อ่านข่าว</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Article Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="article-container">
+
+        <!-- Left: Article Content -->
+        <div>
+          <article class="article-card">
+            <img src="assets/images/news1.jpg" alt="ภาพข่าว" class="article-cover" id="articleCoverImg">
+
+            <div
+              style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px; font-size: 0.9rem; color: var(--text-muted); flex-wrap: wrap;">
+              <span><i class="fa-regular fa-calendar"></i> <span id="articleDate">20 มีนาคม 2569</span></span>
+              <span><i class="fa-regular fa-user"></i> <span id="articleAuthor">สมาพันธ์ SME ไทยสากล</span></span>
+              <span><i class="fa-regular fa-eye"></i> <span id="articleViews">1,420 อ่าน</span></span>
+            </div>
+
+            <h2 id="articleHeading"
+              style="font-size: 1.8rem; font-weight: 700; color: var(--primary); line-height: 1.4; margin-bottom: 25px;">
+              หัวข้อข่าวสาร
+            </h2>
+
+            <div class="article-content" id="articleBody">
+              <!-- Dynamically populated or fallback -->
+              <p>เนื้อหาข่าวสารกำลังโหลด...</p>
+            </div>
+
+            <div class="article-tags" id="articleTags">
+              <!-- Dynamically populated tags -->
+            </div>
+
+            <!-- Share & Back -->
+            <div
+              style="margin-top: 35px; padding-top: 25px; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 15px;">
+              <a href="news.html" class="btn-outline-primary">
+                <i class="fa-solid fa-arrow-left"></i> ย้อนกลับไปหน้าข่าวสาร
+              </a>
+              <div style="display: flex; gap: 10px; align-items: center;">
+                <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted);">แชร์ข่าวนี้:</span>
+                <button
+                  onclick="navigator.clipboard.writeText(window.location.href); alert('คัดลอกลิงก์เรียบร้อยแล้ว!');"
+                  class="btn-outline-primary" style="padding: 6px 14px; font-size: 0.85rem; cursor: pointer;">
+                  <i class="fa-solid fa-link"></i> คัดลอกลิงก์
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Right: Sidebar -->
+        <aside>
+          <!-- Widget: Benefit Highlight -->
+          <div class="sidebar-widget"
+            style="background: linear-gradient(135deg, #0b1f3a 0%, #153e75 100%); color: #ffffff; border: none;">
+            <span
+              style="background: #eab308; color: #000; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">LMS
+              Free Access</span>
+            <h4 style="font-size: 1.2rem; font-weight: 700; margin: 12px 0 8px 0; color: #ffffff;">อบรมฟรีตลอดปี</h4>
+            <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 18px;">
+              สมาชิกสมาพันธ์ SME ไทยสากล รับสิทธิ์เข้าอบรมและสัมมนาออนไลน์ฟรีผ่าน LMS keymanacademy.com
+            </p>
+            <a href="services.html" class="btn-primary"
+              style="width: 100%; justify-content: center; font-size: 0.9rem;">
+              <span>ดูสิทธิประโยชน์</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Widget: Other News -->
+          <div class="sidebar-widget">
+            <h4 class="widget-title">ข่าวสารและบทความอื่น</h4>
+            <div id="sidebarNewsList">
+              <a href="news-detail.html?id=1" class="widget-news-item" style="text-decoration: none;">
+                <img src="assets/images/news1.jpg" alt="thumb" class="widget-news-thumb">
+                <div>
+                  <div class="widget-news-title">ยกระดับ SME ไทย สู่อุตสาหกรรมฆ่าเชื้อและสุขอนามัยมาตรฐานสากล</div>
+                  <small style="color: var(--text-muted); font-size: 0.75rem;"><i class="fa-regular fa-calendar"></i> 20
+                    มี.ค. 2569</small>
+                </div>
+              </a>
+              <a href="news-detail.html?id=2" class="widget-news-item" style="text-decoration: none;">
+                <img src="assets/images/news-keyman.png" alt="thumb" class="widget-news-thumb" style="object-fit: contain; background: #ffffff;">
+                <div>
+                  <div class="widget-news-title">ISME จับมือ LMS keymanacademy.com มอบสิทธิ์อบรมสัมมนาฟรีตลอดปี</div>
+                  <small style="color: var(--text-muted); font-size: 0.75rem;"><i class="fa-regular fa-calendar"></i> 15
+                    มี.ค. 2569</small>
+                </div>
+              </a>
+              <a href="news-detail.html?id=3" class="widget-news-item" style="text-decoration: none;">
+                <img src="assets/images/news3.jpg" alt="thumb" class="widget-news-thumb">
+                <div>
+                  <div class="widget-news-title">เจรจาการค้า: ขยายตลาดผลิตภัณฑ์ทำความสะอาดและฆ่าเชื้อสู่ยุโรป</div>
+                  <small style="color: var(--text-muted); font-size: 0.75rem;"><i class="fa-regular fa-calendar"></i> 10
+                    มี.ค. 2569</small>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Widget: Member Registration CTA -->
+          <div class="sidebar-widget" style="text-align: center;">
+            <div
+              style="width: 50px; height: 50px; background: #eff6ff; color: #2563eb; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto; font-size: 1.3rem;">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 8px;">
+              ยังไม่ได้เป็นสมาชิก?</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">
+              ร่วมเป็นครอบครัวเดียวกับผู้ประกอบการ SME กว่า 15,000 รายทั่วไทย
+            </p>
+            <a href="register.html" class="btn-primary"
+              style="width: 100%; justify-content: center; font-size: 0.9rem;">
+              <span>สมัครสมาชิกทันที</span>
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <img src="assets/images/logo.jpg" alt="Logo">
+          <p class="footer-desc">
+            สมาพันธ์ SME ไทยสากล (International SME Federation of Thailand - ISME) เครือข่ายองค์กร SME
+            หลักของประเทศที่เข้มแข็ง เป็นเสาหลักในการพัฒนา SME ในทุกมิติ
+          </p>
+          <div class="top-bar-social" style="justify-content: flex-start;">
+            <a href="https://www.facebook.com/thaismefederation" target="_blank"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@smethai" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@smethai" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">ลิงก์ด่วน</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> หน้าหลัก</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> เกี่ยวกับสมาพันธ์</a></li>
+            <li><a href="news.html"><i class="fa-solid fa-chevron-right"></i> กิจกรรมและข่าวสาร</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> บริการสมาชิก</a></li>
+            <li><a href="register.html"><i class="fa-solid fa-chevron-right"></i> สมัครสมาชิก</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> ติดต่อเรา</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">บริการสมาชิก</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> สิทธิประโยชน์สมาชิก</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> ขั้นตอนการสมัคร</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> ที่ปรึกษาธุรกิจ SME</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> แหล่งเงินทุนและสินเชื่อ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">ติดต่อเรา</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>3186, 3188 ถนนลาดพร้าว แขวงคลองจั่น เขตบางกะปิ กรุงเทพมหานคร 10240</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>023999999</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 สมาพันธ์ SME ไทยสากล (ISME). สงวนลิขสิทธิ์ทุกประการ.</div>
+        <div>ขับเคลื่อนโดย สมาคมสมาพันธ์เอสเอ็มอีไทยสากล</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <button class="float-btn float-btn-top" id="backToTopBtn" title="กลับขึ้นด้านบน">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script src="assets/js/database.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Load article based on URL query param `?id=...`
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const articleId = parseInt(urlParams.get('id')) || 1;
+
+      if (window.SME_DATABASE && window.SME_DATABASE.news) {
+        const article = window.SME_DATABASE.news.find(n => n.id === articleId) || window.SME_DATABASE.news[0];
+        if (article) {
+          document.title = `${article.title} | สมาพันธ์ SME ไทยสากล`;
+          const catEl = document.getElementById('articleCategoryTag');
+          if (catEl) catEl.innerHTML = `<i class="fa-solid fa-newspaper"></i> ${article.category}`;
+
+          const heroEl = document.getElementById('articleHeroTitle');
+          if (heroEl) heroEl.innerText = article.title;
+
+          const headEl = document.getElementById('articleHeading');
+          if (headEl) headEl.innerText = article.title;
+
+          const dateEl = document.getElementById('articleDate');
+          if (dateEl) dateEl.innerText = article.date;
+
+          const authEl = document.getElementById('articleAuthor');
+          if (authEl) authEl.innerText = article.author;
+
+          const viewEl = document.getElementById('articleViews');
+          if (viewEl) viewEl.innerText = `${article.views} อ่าน`;
+
+          const imgEl = document.getElementById('articleCoverImg');
+          if (imgEl) {
+            imgEl.src = article.image;
+            if (article.image && article.image.includes('keyman')) {
+              imgEl.style.objectFit = 'contain';
+              imgEl.style.background = '#ffffff';
+              imgEl.style.padding = '30px';
+              imgEl.style.border = '1px solid #e2e8f0';
+            }
+          }
+
+          const bodyEl = document.getElementById('articleBody');
+          if (bodyEl) bodyEl.innerHTML = article.content;
+
+          // Tags
+          const tagsContainer = document.getElementById('articleTags');
+          if (tagsContainer && article.tags) {
+            tagsContainer.innerHTML = article.tags.map(t => `<span class="article-tag">#${t}</span>`).join(' ');
+          }
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

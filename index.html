@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!-- ==============================================================================
+     [ ไฟล์หน้าหลัก: index.html ]
+     ชื่อหน้า: หน้าหลัก (Homepage)
+     คำอธิบาย: หน้าแรกของเว็บไซต์สมาพันธ์ SME ไทยสากล (ISME)
+     ============================================================================== -->
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>หน้าหลัก | สมาพันธ์ SME ไทยสากล - ISME (สมาพันธ์ SME ไทย)</title>
+  <meta name="description"
+    content="สมาพันธ์ SME ไทย เป็นเครือข่ายองค์กร SME หลักของประเทศที่เข้มแข็ง เป็นเสาหลักในการพัฒนา SME ในทุกมิติ เพื่อร่วมกันขับเคลื่อนเศรษฐกิจโดยรวมของประเทศ">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo ที่แนบมา -->
+        <a href="index.html" class="brand-logo" title="สมาพันธ์ SME ไทยสากล">
+          <img src="assets/images/logo.jpg" alt="ISME สมาพันธ์ SME ไทยสากล">
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> เกี่ยวกับสมาพันธ์</a>
+          </li>
+          <li><a href="news.html" class="nav-link"><i class="fa-solid fa-newspaper"></i> กิจกรรมและข่าวสาร</a></li>
+          <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i> บริการสมาชิก</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+        </ul>
+
+        <!-- Right Action Button -->
+        <div class="nav-actions">
+          <a href="register.html" class="btn-primary">
+            <span>สมัครสมาชิก</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="เปิดเมนู">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/images/logo.jpg" alt="Logo" style="height: 44px;">
+      <button class="drawer-close" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+      <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> เกี่ยวกับสมาพันธ์</a></li>
+      <li><a href="news.html" class="nav-link"><i class="fa-solid fa-newspaper"></i> กิจกรรมและข่าวประชาสัมพันธ์</a>
+      </li>
+      <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i>
+          บริการสำหรับสมัครสมาชิก</a></li>
+      <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="register.html" class="btn-primary" style="width: 100%; justify-content: center;">
+        <span>สมัครสมาชิกสมาพันธ์</span>
+        <i class="fa-solid fa-user-plus"></i>
+      </a>
+      <div style="margin-top: 15px; font-size: 0.85rem; color: #64748b; text-align: center;">
+        <i class="fa-solid fa-phone"></i> โทร. 023999999
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero Banner Slider -->
+  <section class="hero-slider-section">
+    <div class="slider-container">
+      <!-- Slide 1 -->
+      <div class="slide-item active" style="background-image: url('assets/images/banner1.jpg');">
+        <div class="slide-overlay">
+          <div class="container">
+            <div class="slide-content">
+              <span class="slide-tag"><i class="fa-solid fa-star"></i> ISME สมาพันธ์ SME ไทยสากล</span>
+              <h1 class="slide-title">สมาพันธ์ SME ไทยสากล</h1>
+              <h2 class="slide-subtitle">สร้างโอกาส พัฒนาเครือข่าย และยกระดับ SME ไทยอย่างยั่งยืน</h2>
+              <p class="slide-desc">เป็นเครือข่ายองค์กร SME หลักของประเทศที่เข้มแข็ง เป็นเสาหลักในการพัฒนา SME ในทุกมิติ
+                และสามารถร่วมมือได้กับทุกภาคส่วน เพื่อร่วมกันขับเคลื่อนเศรษฐกิจโดยรวมของประเทศ</p>
+              <div class="slide-btns">
+                <a href="register.html" class="btn-primary">
+                  <span>สมัครสมาชิกสมาพันธ์</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="services.html" class="btn-outline-white">
+                  <span>ดูบริการและสิทธิประโยชน์</span>
+                  <i class="fa-solid fa-circle-info"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide-item" style="background-image: url('assets/images/banner2.jpg');">
+        <div class="slide-overlay">
+          <div class="container">
+            <div class="slide-content">
+              <span class="slide-tag"><i class="fa-solid fa-globe"></i> CONNECTING THAI SME TO THE WORLD</span>
+              <h2 class="slide-title">เชื่อมโยงพลัง SME ทั่วไทย</h2>
+              <h3 class="slide-subtitle">ก้าวสู่ตลาดสากลด้วยดิจิทัลและนวัตกรรม</h3>
+              <p class="slide-desc">ร่วมมือกับภาครัฐ ภาคเอกชน และเครือข่ายระดับนานาชาติ เพื่อเปิดประตูโอกาสทางการค้า
+                การเข้าถึงแหล่งทุน และเพิ่มศักยภาพการแข่งขันในตลาดโลก</p>
+              <div class="slide-btns">
+                <a href="about.html" class="btn-primary">
+                  <span>รู้จักสมาพันธ์</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="news.html" class="btn-outline-white">
+                  <span>กิจกรรมและข่าวสาร</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide-item" style="background-image: url('assets/images/banner3.jpg');">
+        <div class="slide-overlay">
+          <div class="container">
+            <div class="slide-content">
+              <span class="slide-tag"><i class="fa-solid fa-handshake"></i> EMPOWERING ENTREPRENEURS</span>
+              <h2 class="slide-title">สิทธิประโยชน์และบริการเพื่อคุณ</h2>
+              <h3 class="slide-subtitle">อบรม สัมมนา ที่ปรึกษาธุรกิจ และส่วนลดกว่า 100 แห่ง</h3>
+              <p class="slide-desc">ดูแลสมาชิกครอบคลุม 77 จังหวัดทั่วประเทศ พร้อมให้คำปรึกษาทางธุรกิจ กฎหมาย การเงิน
+                บัญชี และการตลาดออนไลน์อย่างครบวงจร</p>
+              <div class="slide-btns">
+                <a href="services.html" class="btn-primary">
+                  <span>ดูสิทธิประโยชน์สมาชิก</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="btn-outline-white">
+                  <span>ติดต่อเรา</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls & Dots -->
+    <button class="slider-control-prev" aria-label="สไลด์ก่อนหน้า"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="slider-control-next" aria-label="สไลด์ถัดไป"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="slider-dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </section>
+
+  <!-- Statistics Counters Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-card-grid">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <div class="stat-number">77</div>
+          <div class="stat-label">จังหวัดทั่วประเทศ</div>
+          <div class="stat-desc">เครือข่ายศูนย์ประสานงานครอบคลุมทุกภาค</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="stat-number">15,000+</div>
+          <div class="stat-label">สมาชิกผู้ประกอบการ</div>
+          <div class="stat-desc">เครือข่าย SME ที่เข้มแข็งและเติบโตร่วมกัน</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-handshake"></i></div>
+          <div class="stat-number">100+</div>
+          <div class="stat-label">องค์กรพันธมิตร</div>
+          <div class="stat-desc">ทั้งภาครัฐ สถาบันการเงิน และเอกชน</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="stat-number">250+</div>
+          <div class="stat-label">โครงการและกิจกรรม</div>
+          <div class="stat-desc">พัฒนาทักษะ เสริมศักยภาพ และเปิดตลาดใหม่</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Highlight Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content-box">
+          <span class="section-tag">เกี่ยวกับสมาพันธ์</span>
+          <h2 class="section-title">สมาพันธ์ SME ไทยสากล คือใคร</h2>
+          <p class="about-text">
+            <strong>สมาพันธ์ SME ไทยสากล</strong> เป็นองค์กรภาคเอกชนที่รวบรวมผู้ประกอบการ SME ทั่วประเทศ
+            เพื่อสร้างเครือข่ายที่แข็งแกร่ง พัฒนาศักยภาพ และสนับสนุนการเติบโตของธุรกิจ SME ไทยอย่างยั่งยืน
+            ภายใต้การขับเคลื่อนด้วยเทคโนโลยีดิจิทัลและนวัตกรรม
+          </p>
+          <p class="about-text">
+            เราให้บริการและดูแลสมาชิกกว่า 15,000 รายในทั้ง 77 จังหวัดทั่วประเทศ
+            ด้วยพันธกิจในการสนับสนุนการเติบโตอย่างยั่งยืน การนำเทคโนโลยีดิจิทัลมาใช้ และการสร้างความร่วมมือระหว่างภาครัฐ
+            ภาคเอกชน และสถาบันการศึกษา
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>ศูนย์กลางความร่วมมือ SME</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>กระบอกเสียงสะท้อนนโยบายภาครัฐ</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>เข้าถึงแหล่งเงินทุนและสินเชื่อพิเศษ</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>ขยายโอกาสสู่ตลาดต่างประเทศ</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+            <a href="about.html" class="btn-primary">
+              <span>อ่านข้อมูลสมาพันธ์เพิ่มเติม</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="services.html" class="btn-outline-primary">
+              <span>สิทธิประโยชน์สมาชิก</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-img-box">
+          <img src="assets/images/about-intro.jpg" alt="สมาพันธ์เอสเอ็มอีไทย">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENSURE Core Values Section -->
+  <section class="section-padding ensure-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CORE VALUES</span>
+        <h2 class="section-title">ค่านิยมองค์กร "ENSURE"</h2>
+        <p class="section-desc">หลักการทำงาน 6
+          ประการที่สมาพันธ์เอสเอ็มอีไทยยึดมั่นเพื่อนำพาผู้ประกอบการไทยเติบโตอย่างมั่นคงและยั่งยืน</p>
+      </div>
+
+      <div class="ensure-grid">
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">E</div>
+          <h3 class="ensure-title">Enhancement</h3>
+          <div class="ensure-subtitle">การยกระดับและพัฒนา</div>
+          <p class="ensure-desc">มุ่งมั่นพัฒนาศักยภาพผู้ประกอบการ SME ให้มีความเข้มแข็งและเติบโตอย่างยั่งยืนในยุคดิจิทัล
+          </p>
+        </div>
+
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">N</div>
+          <h3 class="ensure-title">Networking</h3>
+          <div class="ensure-subtitle">การสร้างเครือข่าย</div>
+          <p class="ensure-desc">เชื่อมโยงความร่วมมือระหว่างสมาชิก ภาครัฐ ภาคเอกชน และสถาบันการศึกษาทั้งในและต่างประเทศ
+          </p>
+        </div>
+
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">S</div>
+          <h3 class="ensure-title">Sacrifice</h3>
+          <div class="ensure-subtitle">ความเสียสละ</div>
+          <p class="ensure-desc">เสียสละเวลา ทุ่มเทแรงกายและใจเพื่อประโยชน์สุขส่วนรวมของผู้ประกอบการ SME ไทย</p>
+        </div>
+
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">U</div>
+          <h3 class="ensure-title">Unity</h3>
+          <div class="ensure-subtitle">ความเป็นหนึ่งเดียว</div>
+          <p class="ensure-desc">รวมพลังสร้างความสามัคคีและเป็นเอกภาพของเครือข่าย SME ไทยในการขับเคลื่อนเศรษฐกิจ</p>
+        </div>
+
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">R</div>
+          <h3 class="ensure-title">Responsibility</h3>
+          <div class="ensure-subtitle">ความรับผิดชอบ</div>
+          <p class="ensure-desc">รับผิดชอบต่อหน้าที่ ต่อสมาชิก คู่ค้า สังคม และสิ่งแวดล้อมอย่างมีธรรมาภิบาล</p>
+        </div>
+
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">E</div>
+          <h3 class="ensure-title">Ethics</h3>
+          <div class="ensure-subtitle">จริยธรรมและคุณธรรม</div>
+          <p class="ensure-desc">ยึดมั่นในหลักความถูกต้อง ซื่อสัตย์สุจริต โปร่งใส และตรวจสอบได้ในทุกกระบวนการทำงาน</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Benefits Section -->
+  <section class="section-padding services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">SERVICES & BENEFITS</span>
+        <h2 class="section-title">สิทธิประโยชน์สำหรับสมาชิก</h2>
+        <p class="section-desc">รับบริการสนับสนุนและสิทธิพิเศษรอบด้าน เพื่อเร่งการเติบโตของธุรกิจคุณ</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-tags"></i></div>
+          <h3 class="benefit-title">ส่วนลดพันธมิตรกว่า 100 แห่ง</h3>
+          <p class="benefit-desc">รับส่วนลดค่าขนส่ง ซอฟต์แวร์จัดการร้านค้า ระบบบัญชี คลาวด์
+            และอุปกรณ์สำนักงานจากพาร์ทเนอร์ชั้นนำ</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 class="benefit-title">อบรมและสัมมนาฟรีตลอดปี</h3>
+          <p class="benefit-desc">สิทธิ์เข้าอบรมและสัมมนาพัฒนาทักษะธุรกิจฟรีตลอดปี ผ่านระบบ LMS ของ <a
+              href="https://keymanacademy.com" target="_blank"
+              style="color: var(--primary); font-weight: 600; text-decoration: underline;">keymanacademy.com</a>
+            เรียนได้ทุกที่ ทุกเวลา</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+          <h3 class="benefit-title">เครือข่าย SME กว่า 15,000 ราย</h3>
+          <p class="benefit-desc">เข้าถึงเครือข่ายคู่ค้า ผู้ผลิต และซัพพลายเออร์ทั่วไทย พร้อมโอกาสเจรจาจับคู่ธุรกิจ
+            Business Matching</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-comments-dollar"></i></div>
+          <h3 class="benefit-title">ปรึกษาผู้เชี่ยวชาญ & แหล่งทุน</h3>
+          <p class="benefit-desc">รับคำปรึกษาทางกฎหมาย การเงิน ภาษี
+            และสิทธิพิเศษในการขอสินเชื่อดอกเบี้ยผ่อนปรนจากสถาบันการเงิน</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-store"></i></div>
+          <h3 class="benefit-title">โอกาสออกบูธงานแสดงสินค้า</h3>
+          <p class="benefit-desc">สิทธิ์เข้าร่วมมหกรรมแสดงสินค้าระดับชาติและนานาชาติในราคาพิเศษ
+            เพื่อขยายช่องทางการจัดจำหน่าย</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-earth-asia"></i></div>
+          <h3 class="benefit-title">ขยายตลาดส่งออกสู่สากล</h3>
+          <p class="benefit-desc">สนับสนุนการเจรจาการค้าข้อตกลง FTA และการจับคู่ผู้ซื้อต่างประเทศผ่านเครือข่าย ISME
+            สากล</p>
+        </div>
+      </div>
+
+      <!-- 4 ขั้นตอนการสมัคร -->
+      <div class="steps-container">
+        <div class="steps-header">
+          <h3>สมัครสมาชิกง่าย ๆ เพียง 4 ขั้นตอน</h3>
+          <p>เพื่อรับสิทธิประโยชน์และบริการต่าง ๆ จากสมาพันธ์เอสเอ็มอีไทย</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h4 class="step-title">กรอกแบบฟอร์มออนไลน์</h4>
+            <p class="step-desc">กรอกข้อมูลธุรกิจและผู้ติดต่อผ่านระบบออนไลน์ของสมาพันธ์</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h4 class="step-title">แนบเอกสารประกอบ</h4>
+            <p class="step-desc">อัปโหลดหนังสือรับรอง หรือทะเบียนพาณิชย์ และบัตรประชาชน</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h4 class="step-title">เจ้าหน้าที่ตรวจสอบ</h4>
+            <p class="step-desc">ตรวจสอบความถูกต้องและยืนยันข้อมูลภายใน 1-2 วันทำการ</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h4 class="step-title">อนุมัติ & รับสิทธิ์</h4>
+            <p class="step-desc">รับรหัสสมาชิกและเริ่มใช้สิทธิประโยชน์ได้ทันที</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 35px;">
+          <a href="register.html" class="btn-primary" style="padding: 12px 35px; font-size: 1.05rem;">
+            <span>เริ่มสมัครสมาชิกออนไลน์ตอนนี้</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- News & Activities Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">NEWS & ACTIVITIES</span>
+        <h2 class="section-title">ข่าวสารและกิจกรรมล่าสุด</h2>
+        <p class="section-desc">อัปเดตข้อมูล ข่าวสาร บทความ และกิจกรรมที่เป็นประโยชน์จากสมาพันธ์ SME ไทย</p>
+      </div>
+
+      <div class="news-grid">
+        <!-- News Card 1 -->
+        <article class="news-card">
+          <div class="news-thumb-wrapper">
+            <img src="assets/images/news1.jpg" alt="ยกระดับ SME ไทย สู่อุตสาหกรรมฆ่าเชื้อและสุขอนามัยมาตรฐานสากล">
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span><i class="fa-regular fa-calendar"></i> 20 มี.ค. 2569</span>
+              <span><i class="fa-regular fa-eye"></i> 1,420 อ่าน</span>
+            </div>
+            <h3 class="news-title">
+              <a href="news-detail.html?id=1">ยกระดับ SME ไทย สู่อุตสาหกรรมฆ่าเชื้อและสุขอนามัยมาตรฐานสากล</a>
+            </h3>
+            <p class="news-summary">
+              ความต้องการมาตรฐานสุขอนามัยระดับโลกพุ่งสูง ผู้ประกอบการ SME ไทยเร่งปรับตัว
+              นำเทคโนโลยีฆ่าเชื้อที่ทันสมัยมาใช้ในกระบวนการผลิตเพื่อสร้างความเชื่อมั่นแก่คู่ค้าสากล
+            </p>
+            <div class="news-footer">
+              <a href="news-detail.html?id=1" class="read-more-btn">
+                <span>อ่านต่อฉบับเต็ม</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- News Card 2 -->
+        <article class="news-card">
+          <div class="news-thumb-wrapper" style="background: #ffffff;">
+            <img src="assets/images/news-keyman.png" alt="ISME จับมือ LMS keymanacademy.com" style="object-fit: contain; padding: 15px;">
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span><i class="fa-regular fa-calendar"></i> 15 มี.ค. 2569</span>
+              <span><i class="fa-regular fa-eye"></i> 1,890 อ่าน</span>
+            </div>
+            <h3 class="news-title">
+              <a href="news-detail.html?id=2">ISME จับมือ LMS keymanacademy.com
+                มอบสิทธิ์อบรมสัมมนาฟรีตลอดปีแก่สมาชิก</a>
+            </h3>
+            <p class="news-summary">
+              เดินหน้าเสริมแกร่งผู้ประกอบการไทย สมาพันธ์ฯ เปิดตัวความร่วมมือกับแพลตฟอร์ม e-Learning ชั้นนำ
+              keymanacademy.com ให้สมาชิกเรียนคอร์สธุรกิจ การเงิน และเทคโนโลยีฟรีตลอดทั้งปี
+            </p>
+            <div class="news-footer">
+              <a href="news-detail.html?id=2" class="read-more-btn">
+                <span>อ่านต่อฉบับเต็ม</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- News Card 3 -->
+        <article class="news-card">
+          <div class="news-thumb-wrapper">
+            <img src="assets/images/news3.jpg" alt="เจรจาการค้า ผลิตภัณฑ์ฆ่าเชื้อสู่สากล">
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span><i class="fa-regular fa-calendar"></i> 10 มี.ค. 2569</span>
+              <span><i class="fa-regular fa-eye"></i> 1,150 อ่าน</span>
+            </div>
+            <h3 class="news-title">
+              <a href="news-detail.html?id=3">เจรจาการค้า: ขยายตลาดผลิตภัณฑ์ทำความสะอาดและฆ่าเชื้อสู่สากล</a>
+            </h3>
+            <p class="news-summary">
+              เตรียมความพร้อมผู้ประกอบการ SME ไทยในกลุ่มผลิตภัณฑ์ทำความสะอาดและน้ำยาฆ่าเชื้อ
+              เพื่อบุกตลาดการค้าต่างประเทศและกลุ่มประเทศอาเซียน-ยุโรป
+            </p>
+            <div class="news-footer">
+              <a href="news-detail.html?id=3" class="read-more-btn">
+                <span>อ่านต่อฉบับเต็ม</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="news.html" class="btn-outline-primary" style="padding: 12px 30px;">
+          <span>ดูข่าวสารและกิจกรรมทั้งหมด</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategic Partners Section -->
+  <section class="partners-section">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-tag">พันธมิตรของเรา</span>
+        <h3 style="font-size: 1.6rem; color: var(--primary); font-weight: 700;">ร่วมมือกับทุกภาคส่วนเพื่อขับเคลื่อน SME
+          ไทย</h3>
+      </div>
+      <div class="partners-grid">
+        <span class="partner-item"><i class="fa-solid fa-landmark"></i> สสว. (สสว.)</span>
+        <span class="partner-item"><i class="fa-solid fa-building"></i> กระทรวงพาณิชย์</span>
+        <span class="partner-item"><i class="fa-solid fa-file-invoice"></i> กรมพัฒนาธุรกิจการค้า (DBD)</span>
+        <span class="partner-item"><i class="fa-solid fa-industry"></i> กรมส่งเสริมอุตสาหกรรม</span>
+        <span class="partner-item"><i class="fa-solid fa-piggy-bank"></i> SME D Bank</span>
+        <span class="partner-item"><i class="fa-solid fa-money-bill-transfer"></i> EXIM Bank</span>
+        <span class="partner-item"><i class="fa-solid fa-users"></i> สภาหอการค้าแห่งประเทศไทย</span>
+        <span class="partner-item"><i class="fa-solid fa-gears"></i> สภาอุตสาหกรรมแห่งประเทศไทย</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-content">
+          <h2>มาเป็นส่วนหนึ่งของเครือข่าย SME ไทยสากล</h2>
+          <p>ร่วมเสริมความแข็งแกร่ง ขยายโอกาสธุรกิจ และเติบโตอย่างยั่งยืนไปพร้อมกัน</p>
+        </div>
+        <div class="cta-actions">
+          <a href="register.html" class="btn-primary" style="padding: 14px 32px; font-size: 1.05rem;">
+            <span>สมัครสมาชิกสมาพันธ์</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col-brand">
+          <img src="assets/images/logo.jpg" alt="Logo">
+          <p class="footer-desc">
+            สมาพันธ์ SME ไทยสากล (International SME Federation of Thailand - ISME) เครือข่ายองค์กร SME
+            หลักของประเทศที่เข้มแข็ง เป็นเสาหลักในการพัฒนา SME ในทุกมิติ เพื่อร่วมกันขับเคลื่อนเศรษฐกิจของประเทศ
+          </p>
+          <div class="top-bar-social" style="justify-content: flex-start;">
+            <a href="https://www.facebook.com/thaismefederation" target="_blank"><i
+                class="fa-brands fa-facebook-f"></i></a>
+
+            <a href="https://www.youtube.com/@smethai" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@smethai" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-title">ลิงก์ด่วน</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> หน้าหลัก</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> เกี่ยวกับสมาพันธ์</a></li>
+            <li><a href="news.html"><i class="fa-solid fa-chevron-right"></i> กิจกรรมและข่าวสาร</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> บริการสมาชิก</a></li>
+            <li><a href="register.html"><i class="fa-solid fa-chevron-right"></i> สมัครสมาชิก</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> ติดต่อเรา</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services 
+        <div>
+          <h4 class="footer-title">บริการสมาชิก</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> สิทธิประโยชน์สมาชิก</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> ขั้นตอนการสมัคร</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> ที่ปรึกษาธุรกิจ SME</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> แหล่งเงินทุนและสินเชื่อ</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> การจับคู่ธุรกิจ (Matching)</a></li>
+          </ul>
+        </div>
+        
+        -->
+
+        <!-- Col 4: Contacts -->
+        <div>
+          <h4 class="footer-title">ติดต่อเรา</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>3186, 3188 ถนนลาดพร้าว แขวงคลองจั่น เขตบางกะปิ กรุงเทพมหานคร 10240</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>023999999</span>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 สมาพันธ์ SME ไทยสากล (ISME). สงวนลิขสิทธิ์ทุกประการ.
+        </div>
+        <div>
+          ขับเคลื่อนโดย <a href="https://smethai.or.th/" target="_blank">สมาพันธ์ SME ไทยสากล</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+
+    <button class="float-btn float-btn-top" id="backToTopBtn" title="กลับขึ้นด้านบน">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/database.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

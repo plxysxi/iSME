@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<!-- ==============================================================================
+     [ ไฟล์หน้าเกี่ยวกับสมาพันธ์: about.html ]
+     ชื่อหน้า: เกี่ยวกับสมาพันธ์ (About Us)
+     คำอธิบาย: ประวัติความเป็นมา วิสัยทัศน์ พันธกิจ วัตถุประสงค์ 5 ด้าน ค่านิยม ENSURE
+              และคณะกรรมการบริหาร สมาพันธ์ SME ไทยสากล (ISME)
+     ============================================================================== -->
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เกี่ยวกับสมาพันธ์ | สมาพันธ์ SME ไทยสากล - ISME</title>
+  <meta name="description"
+    content="ทำความรู้จักสมาพันธ์เอสเอ็มอีไทย วิสัยทัศน์ พันธกิจ ค่านิยม ENSURE และวัตถุประสงค์ในการขับเคลื่อนผู้ประกอบการ SME ทั่วประเทศ">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo" title="สมาพันธ์ SME ไทยสากล">
+          <img src="assets/images/logo.jpg" alt="ISME สมาพันธ์ SME ไทยสากล">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+          <li><a href="about.html" class="nav-link active"><i class="fa-solid fa-building-columns"></i>
+              เกี่ยวกับสมาพันธ์</a></li>
+          <li><a href="news.html" class="nav-link"><i class="fa-solid fa-newspaper"></i> กิจกรรมและข่าวสาร</a></li>
+          <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i> บริการสมาชิก</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="register.html" class="btn-primary">
+            <span>สมัครสมาชิก</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="เปิดเมนู">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/images/logo.jpg" alt="Logo" style="height: 44px;">
+      <button class="drawer-close" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+      <li><a href="about.html" class="nav-link active"><i class="fa-solid fa-building-columns"></i>
+          เกี่ยวกับสมาพันธ์</a></li>
+      <li><a href="news.html" class="nav-link"><i class="fa-solid fa-newspaper"></i> กิจกรรมและข่าวประชาสัมพันธ์</a>
+      </li>
+      <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i>
+          บริการสำหรับสมัครสมาชิก</a></li>
+      <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="register.html" class="btn-primary" style="width: 100%; justify-content: center;">
+        <span>สมัครสมาชิกสมาพันธ์</span>
+        <i class="fa-solid fa-user-plus"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Inner Page Hero -->
+  <section class="inner-page-hero">
+    <div class="container">
+      <div class="inner-hero-content">
+        <span class="inner-hero-tag"><i class="fa-solid fa-building-columns"></i> ABOUT US</span>
+        <h1 class="inner-hero-title">เกี่ยวกับสมาพันธ์ SME ไทยสากล</h1>
+        <p class="inner-hero-subtitle">องค์กรภาคเอกชนที่ขับเคลื่อนผู้ประกอบการ SME ทั่วประเทศ
+          เพื่อสร้างสังคมแห่งการเรียนรู้และการเติบโตอย่างยั่งยืนในยุคดิจิทัล</p>
+        <div class="inner-breadcrumb">
+          <a href="index.html"><i class="fa-solid fa-house"></i> หน้าหลัก</a>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+          <span>เกี่ยวกับสมาพันธ์</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- History & Who We Are -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content-box">
+          <span class="section-tag">ความเป็นมาและบทบาท</span>
+          <h2 class="section-title">สมาพันธ์ SME ไทยสากล คือใคร</h2>
+          <p class="about-text">
+            <strong>"สมาพันธ์ SME ไทยสากล คือเครือข่ายระดับชาติที่รวบรวมผู้ประกอบการ SME จากทั่วประเทศ"</strong>
+            เพื่อสร้างความเข้มแข็งและยกระดับศักยภาพของธุรกิจขนาดกลางและขนาดย่อมไทย ผ่านการแบ่งปันความรู้
+            การสร้างโอกาสทางธุรกิจ และการพัฒนาเครือข่ายความร่วมมือทั้งในและต่างประเทศ
+          </p>
+          <p class="about-text">
+            เราให้บริการสมาชิกกว่า 15,000 รายในทั้ง 77 จังหวัดทั่วประเทศ ด้วยพันธกิจในการสนับสนุนการเติบโตอย่างยั่งยืน
+            การนำเทคโนโลยีดิจิทัลและ AI มาใช้ และการสร้างสะพานเชื่อมโยงความร่วมมือระหว่างภาครัฐ ภาคเอกชน
+            และสถาบันการศึกษา
+          </p>
+          <p class="about-text">
+            สมาพันธ์ SME ไทยสากล มุ่งมั่นในการสร้างระบบนิเวศ (SME Ecosystem) ที่เอื้อต่อการดำเนินธุรกิจ
+            ภายใต้หลักการทำงานที่โปร่งใส มีธรรมาภิบาล และตอบสนองต่อความต้องการของสมาชิกอย่างแท้จริง
+          </p>
+        </div>
+
+        <div class="about-img-box">
+          <img src="assets/images/about-intro.jpg" alt="เครือข่ายสมาพันธ์ SME ไทย">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission Banner -->
+  <section class="section-padding" style="background: var(--grad-navy-dark); color: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: var(--accent);">VISION & MISSION</span>
+        <h2 class="section-title" style="color: #ffffff;">วิสัยทัศน์และพันธกิจ</h2>
+        <p class="section-desc" style="color: #cbd5e1;">ทิศทางและเป้าหมายเชิงยุทธศาสตร์เพื่อการพัฒนาเศรษฐกิจ
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+        <!-- Vision -->
+        <div
+          style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); padding: 35px; border-radius: var(--radius-md); border-top: 4px solid var(--accent);">
+          <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 50%; background: var(--accent); color: var(--primary-dark); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3 style="font-size: 1.45rem; font-weight: 700; color: #ffffff;">วิสัยทัศน์ (Vision)</h3>
+          </div>
+          <p style="font-size: 1.05rem; line-height: 1.7; color: #e2e8f0;">
+            "เป็นเครือข่ายองค์กร SME ที่เข้มแข็ง เป็นเสาหลักในการพัฒนา SME ในทุกมิติ
+            และสามารถร่วมมือได้กับทุกภาคส่วน เพื่อร่วมกันขับเคลื่อนเศรษฐกิจอย่างยั่งยืน"
+          </p>
+        </div>
+
+        <!-- Mission -->
+        <div
+          style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); padding: 35px; border-radius: var(--radius-md); border-top: 4px solid #38bdf8;">
+          <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 50%; background: #38bdf8; color: var(--primary-dark); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 style="font-size: 1.45rem; font-weight: 700; color: #ffffff;">พันธกิจ (Mission)</h3>
+          </div>
+          <ul style="display: flex; flex-direction: column; gap: 12px; color: #e2e8f0; font-size: 0.98rem;">
+            <li style="display: flex; align-items: flex-start; gap: 10px;">
+              <i class="fa-solid fa-circle-check" style="color: #38bdf8; margin-top: 4px;"></i>
+              <span>สร้างโอกาสในการเข้าถึงแหล่งเงินทุน องค์ความรู้ และเทคโนโลยีที่ทันสมัย</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 10px;">
+              <i class="fa-solid fa-circle-check" style="color: #38bdf8; margin-top: 4px;"></i>
+              <span>พัฒนาเครือข่ายความร่วมมือทั้งในระดับจังหวัด ระดับประเทศ และระดับสากล</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 10px;">
+              <i class="fa-solid fa-circle-check" style="color: #38bdf8; margin-top: 4px;"></i>
+              <span>สะท้อนปัญหาและข้อเสนอแนะเชิงนโยบายเพื่อประโยชน์สูงสุดของผู้ประกอบการ SME</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 10px;">
+              <i class="fa-solid fa-circle-check" style="color: #38bdf8; margin-top: 4px;"></i>
+              <span>ส่งเสริมการดำเนินธุรกิจอย่างมีธรรมาภิบาลและความรับผิดชอบต่อสิ่งแวดล้อม (ESG)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Objectives Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">OBJECTIVES</span>
+        <h2 class="section-title">วัตถุประสงค์ 5 ด้านของสมาพันธ์</h2>
+        <p class="section-desc">กรอบการดำเนินงานหลักที่สมาพันธ์เอสเอ็มอีไทยมุ่งมั่นขับเคลื่อน</p>
+      </div>
+
+      <div class="objectives-grid">
+        <div class="objective-card">
+          <span class="objective-badge">01. SME Ecosystem</span>
+          <h3 class="objective-title">เป็นศูนย์กลางความร่วมมือผู้ประกอบการ SME</h3>
+          <p class="objective-desc">สร้างระบบนิเวศทางธุรกิจที่สมบูรณ์ สนับสนุนการแลกเปลี่ยนเรียนรู้ การจับคู่ธุรกิจ
+            และการสร้างโอกาสเติบโตร่วมกันอย่างเป็นรูปธรรม</p>
+        </div>
+
+        <div class="objective-card">
+          <span class="objective-badge">02. Voice of SME</span>
+          <h3 class="objective-title">เป็นกระบอกเสียงให้ผู้ประกอบการ SME ทั่วประเทศ</h3>
+          <p class="objective-desc">สะท้อนปัญหา ข้อเรียกร้อง และข้อเสนอแนะเชิงนโยบายแก่ภาครัฐ
+            เพื่อผลักดันมาตรการช่วยเหลือและส่งเสริม SME อย่างตรงจุดและทันท่วงที</p>
+        </div>
+
+        <div class="objective-card">
+          <span class="objective-badge">03. Connectivity</span>
+          <h3 class="objective-title">พัฒนาเครือข่ายและส่งเสริมความร่วมมือภาครัฐ-เอกชน</h3>
+          <p class="objective-desc">สร้างสะพานเชื่อมต่อสิทธิประโยชน์ ทุนสนับสนุน แหล่งเงินกู้ดอกเบี้ยพิเศษ
+            และช่องทางการตลาดทั้งในประเทศและต่างประเทศ</p>
+        </div>
+
+        <div class="objective-card">
+          <span class="objective-badge">04. Innovation</span>
+          <h3 class="objective-title">ยกระดับศักยภาพธุรกิจ SME ให้เข้มแข็งและยั่งยืน</h3>
+          <p class="objective-desc">ส่งเสริมนวัตกรรม เทคโนโลยีดิจิทัล ปัญญาประดิษฐ์ (AI) และแนวคิดความยั่งยืน (ESG / BCG
+            Model) เพื่อเพิ่มขีดความสามารถการแข่งขัน</p>
+        </div>
+
+        <div class="objective-card" style="grid-column: span 2;">
+          <span class="objective-badge">05. Good Governance</span>
+          <h3 class="objective-title">ยึดมั่นหลักธรรมาภิบาลและภาพลักษณ์ที่ดีต่อสังคม</h3>
+          <p class="objective-desc">บริหารจัดการองค์กรด้วยความโปร่งใส ตรวจสอบได้
+            เป็นองค์กรวิชาชีพที่ได้รับความไว้วางใจจากสมาชิก คู่ค้า ภาครัฐ และสาธารณชน</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENSURE Values Section -->
+  <section class="section-padding ensure-section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CORE VALUES</span>
+        <h2 class="section-title">ค่านิยมองค์กร "ENSURE"</h2>
+        <p class="section-desc">หัวใจสำคัญของการทำงานร่วมกันในเครือข่ายสมาพันธ์ SME ไทยสากล</p>
+      </div>
+
+      <div class="ensure-grid">
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">E</div>
+          <h3 class="ensure-title">Enhancement</h3>
+          <div class="ensure-subtitle">การยกระดับและพัฒนา</div>
+          <p class="ensure-desc">มุ่งมั่นพัฒนาศักยภาพผู้ประกอบการ SME ให้มีความเข้มแข็งและเติบโตอย่างยั่งยืนในยุคดิจิทัล
+          </p>
+        </div>
+
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">N</div>
+          <h3 class="ensure-title">Networking</h3>
+          <div class="ensure-subtitle">การสร้างเครือข่าย</div>
+          <p class="ensure-desc">เชื่อมโยงความร่วมมือระหว่างสมาชิก ภาครัฐ ภาคเอกชน และสถาบันการศึกษาทั้งในและต่างประเทศ
+          </p>
+        </div>
+
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">S</div>
+          <h3 class="ensure-title">Sacrifice</h3>
+          <div class="ensure-subtitle">ความเสียสละ</div>
+          <p class="ensure-desc">เสียสละเวลา ทุ่มเทแรงกายและใจเพื่อประโยชน์สุขส่วนรวมของผู้ประกอบการ SME ไทย</p>
+        </div>
+
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">U</div>
+          <h3 class="ensure-title">Unity</h3>
+          <div class="ensure-subtitle">ความเป็นหนึ่งเดียว</div>
+          <p class="ensure-desc">รวมพลังสร้างความสามัคคีและเป็นเอกภาพของเครือข่าย SME ไทยในการขับเคลื่อนเศรษฐกิจ</p>
+        </div>
+
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">R</div>
+          <h3 class="ensure-title">Responsibility</h3>
+          <div class="ensure-subtitle">ความรับผิดชอบ</div>
+          <p class="ensure-desc">รับผิดชอบต่อหน้าที่ ต่อสมาชิก คู่ค้า สังคม และสิ่งแวดล้อมอย่างมีธรรมาภิบาล</p>
+        </div>
+
+        <div class="ensure-card">
+          <div class="ensure-letter-badge">E</div>
+          <h3 class="ensure-title">Ethics</h3>
+          <div class="ensure-subtitle">จริยธรรมและคุณธรรม</div>
+          <p class="ensure-desc">ยึดมั่นในหลักความถูกต้อง ซื่อสัตย์สุจริต โปร่งใส และตรวจสอบได้ในทุกกระบวนการทำงาน</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Board Members Section -->
+  <section class="section-padding" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">LEADERSHIP & BOARD</span>
+        <h2 class="section-title">คณะกรรมการสมาพันธ์</h2>
+        <p class="section-desc">โครงสร้างคณะกรรมการบริหารสมาคมสมาพันธ์เอสเอ็มอีไทยสากล (ISME)</p>
+      </div>
+
+      <!-- President Featured Card (นายกสมาพันธ์ ไว้บนสุดพร้อมรูปและประวัติ) -->
+      <div class="president-feature-card" style="background: linear-gradient(135deg, #0b1f3a 0%, #153e75 100%); border-radius: var(--radius-lg); padding: 40px; color: #ffffff; margin-bottom: 50px; box-shadow: var(--shadow-lg); border: 1px solid rgba(255,255,255,0.12); display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+        <div style="flex: 0 0 260px; text-align: center; margin: 0 auto;">
+          <div style="width: 220px; height: 270px; margin: 0 auto; background: #1e293b; border: 3px solid #38bdf8; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #94a3b8; font-size: 0.95rem; overflow: hidden; position: relative; box-shadow: 0 12px 28px rgba(0,0,0,0.35);">
+            <i class="fa-solid fa-user-tie" style="font-size: 4.5rem; color: #38bdf8; margin-bottom: 12px;"></i>
+            <span style="color: #f1f5f9; font-weight: 600;">รูปภาพนายกสมาคม</span>
+            <span style="font-size: 0.8rem; color: #94a3b8; margin-top: 4px;">(อัปโหลดรูปภาพที่นี่)</span>
+          </div>
+          <div style="margin-top: 16px; display: inline-block; background: rgba(56, 189, 248, 0.2); border: 1px solid #38bdf8; color: #38bdf8; padding: 6px 18px; border-radius: 20px; font-size: 0.88rem; font-weight: 700;">
+            <i class="fa-solid fa-crown"></i> นายกสมาคม
+          </div>
+        </div>
+        
+        <div style="flex: 1 1 400px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+            <span style="background: #eab308; color: #000; font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; text-transform: uppercase;">President of ISME</span>
+          </div>
+          <h3 style="font-size: 2rem; font-weight: 700; color: #ffffff; margin-bottom: 6px;">นายสิษฐพงศ์ วามะศิริภัทร</h3>
+          <div style="font-size: 1.1rem; color: #38bdf8; font-weight: 600; margin-bottom: 18px;">
+            นายกสมาคมสมาพันธ์เอสเอ็มอีไทยสากล (International SME Federation of Thailand - ISME)
+          </div>
+          
+          <div style="background: rgba(255, 255, 255, 0.07); border-left: 4px solid #38bdf8; padding: 14px 20px; border-radius: 0 8px 8px 0; margin-bottom: 20px; font-style: italic; color: #cbd5e1; line-height: 1.7;">
+            "มุ่งมั่นยกระดับผู้ประกอบการ SME ไทยสู่เวทีระดับสากล เสริมสร้างมาตรฐานอุตสาหกรรม การนำนวัตกรรมและเทคโนโลยีสุขอนามัยมาประยุกต์ใช้ พร้อมส่งเสริมการเรียนรู้ตลอดชีวิตผ่านระบบ LMS เพื่อความยั่งยืนของธุรกิจไทย"
+          </div>
+          
+          <div style="color: #e2e8f0; line-height: 1.75; font-size: 0.95rem;">
+            <h4 style="color: #ffffff; font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-address-card" style="color: #38bdf8;"></i> ข้อมูลประวัติและบทบาทหน้าที่:
+            </h4>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+              <li style="display: flex; align-items: flex-start; gap: 10px;">
+                <i class="fa-solid fa-circle-check" style="color: #38bdf8; margin-top: 5px;"></i>
+                <span><strong>ผู้นำองค์กร:</strong> ขับเคลื่อนยุทธศาสตร์สมาคมสมาพันธ์เอสเอ็มอีไทยสากล เพื่อเป็นเสาหลักสนับสนุนผู้ประกอบการ SME ในทุกมิติอย่างมีธรรมาภิบาล</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 10px;">
+                <i class="fa-solid fa-circle-check" style="color: #38bdf8; margin-top: 5px;"></i>
+                <span><strong>การยกระดับมาตรฐาน:</strong> ผลักดันการยกระดับมาตรฐานผู้ประกอบการในอุตสาหกรรมฆ่าเชื้อโรคและสุขอนามัยของไทยให้เป็นที่ยอมรับระดับสากล</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 10px;">
+                <i class="fa-solid fa-circle-check" style="color: #38bdf8; margin-top: 5px;"></i>
+                <span><strong>เครือข่ายและการพัฒนา:</strong> สร้างความร่วมมือด้านการเรียนรู้ออนไลน์ร่วมกับ LMS keymanacademy.com เพื่อให้สมาชิกได้รับสิทธิ์อบรมและสัมมนาฟรีตลอดปี</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Committee Header -->
+      <div style="margin-bottom: 25px; text-align: center;">
+        <h3 style="font-size: 1.45rem; font-weight: 700; color: var(--primary);">คณะกรรมการบริหารสมาพันธ์</h3>
+        <p style="font-size: 0.95rem; color: var(--text-muted);">เรียงลำดับตามโครงสร้างตำแหน่งบริหารสมาคมสมาพันธ์เอสเอ็มอีไทยสากล</p>
+      </div>
+
+      <!-- Committee Grid (Row 1: 3 Members, Row 2: 4 Members, No Order Numbers) -->
+      <!-- Row 1: 3 Members -->
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; text-align: center; margin-bottom: 25px; max-width: 960px; margin-left: auto; margin-right: auto;">
+        <!-- 1. อุปนายก -->
+        <div
+          style="background: #f8fafd; border-radius: var(--radius-lg); padding: 25px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div
+            style="width: 140px; height: 170px; margin: 0 auto 15px auto; background: #e2e8f0; border: 2px dashed #94a3b8; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #64748b; font-size: 0.85rem;">
+            <i class="fa-regular fa-image" style="font-size: 1.8rem; margin-bottom: 6px;"></i>
+            <span>(ใส่รูปภาพที่นี่)</span>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 6px;">นางสาวทรรศวรรณ ปรีดาวิภาต</h4>
+          <p style="font-size: 0.92rem; color: #2563eb; font-weight: 600;">อุปนายก</p>
+        </div>
+
+        <!-- 2. เลขานุการ -->
+        <div
+          style="background: #f8fafd; border-radius: var(--radius-lg); padding: 25px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div
+            style="width: 140px; height: 170px; margin: 0 auto 15px auto; background: #e2e8f0; border: 2px dashed #94a3b8; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #64748b; font-size: 0.85rem;">
+            <i class="fa-regular fa-image" style="font-size: 1.8rem; margin-bottom: 6px;"></i>
+            <span>(ใส่รูปภาพที่นี่)</span>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 6px;">นางสาวมาริสา นิจนันท์</h4>
+          <p style="font-size: 0.92rem; color: #2563eb; font-weight: 600;">เลขานุการ</p>
+        </div>
+
+        <!-- 3. เหรัญญิก -->
+        <div
+          style="background: #f8fafd; border-radius: var(--radius-lg); padding: 25px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div
+            style="width: 140px; height: 170px; margin: 0 auto 15px auto; background: #e2e8f0; border: 2px dashed #94a3b8; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #64748b; font-size: 0.85rem;">
+            <i class="fa-regular fa-image" style="font-size: 1.8rem; margin-bottom: 6px;"></i>
+            <span>(ใส่รูปภาพที่นี่)</span>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 6px;">นายชัยกฤต สักุณา</h4>
+          <p style="font-size: 0.92rem; color: #2563eb; font-weight: 600;">เหรัญญิก</p>
+        </div>
+      </div>
+
+      <!-- Row 2: 4 Members -->
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 25px; text-align: center;">
+        <!-- 4. นายทะเบียน -->
+        <div
+          style="background: #f8fafd; border-radius: var(--radius-lg); padding: 25px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div
+            style="width: 140px; height: 170px; margin: 0 auto 15px auto; background: #e2e8f0; border: 2px dashed #94a3b8; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #64748b; font-size: 0.85rem;">
+            <i class="fa-regular fa-image" style="font-size: 1.8rem; margin-bottom: 6px;"></i>
+            <span>(ใส่รูปภาพที่นี่)</span>
+          </div>
+          <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 6px;">นางสาวศุภนิช ปุมสันเทียะ</h4>
+          <p style="font-size: 0.9rem; color: #2563eb; font-weight: 600;">นายทะเบียน</p>
+        </div>
+
+        <!-- 5. ประชาสัมพันธ์ -->
+        <div
+          style="background: #f8fafd; border-radius: var(--radius-lg); padding: 25px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div
+            style="width: 140px; height: 170px; margin: 0 auto 15px auto; background: #e2e8f0; border: 2px dashed #94a3b8; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #64748b; font-size: 0.85rem;">
+            <i class="fa-regular fa-image" style="font-size: 1.8rem; margin-bottom: 6px;"></i>
+            <span>(ใส่รูปภาพที่นี่)</span>
+          </div>
+          <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 6px;">นางสาวกิตติยา นราจิณรณ</h4>
+          <p style="font-size: 0.9rem; color: #2563eb; font-weight: 600;">ประชาสัมพันธ์</p>
+        </div>
+
+        <!-- 6. ปฏิคม -->
+        <div
+          style="background: #f8fafd; border-radius: var(--radius-lg); padding: 25px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div
+            style="width: 140px; height: 170px; margin: 0 auto 15px auto; background: #e2e8f0; border: 2px dashed #94a3b8; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #64748b; font-size: 0.85rem;">
+            <i class="fa-regular fa-image" style="font-size: 1.8rem; margin-bottom: 6px;"></i>
+            <span>(ใส่รูปภาพที่นี่)</span>
+          </div>
+          <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 6px;">นายนิธิวรรธน์ หลินภัทรชัย</h4>
+          <p style="font-size: 0.9rem; color: #2563eb; font-weight: 600;">ปฏิคม</p>
+        </div>
+
+        <!-- 7. กรรมการ -->
+        <div
+          style="background: #f8fafd; border-radius: var(--radius-lg); padding: 25px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div
+            style="width: 140px; height: 170px; margin: 0 auto 15px auto; background: #e2e8f0; border: 2px dashed #94a3b8; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #64748b; font-size: 0.85rem;">
+            <i class="fa-regular fa-image" style="font-size: 1.8rem; margin-bottom: 6px;"></i>
+            <span>(ใส่รูปภาพที่นี่)</span>
+          </div>
+          <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 6px;">นายนพดล รักษ์พงศ์</h4>
+          <p style="font-size: 0.9rem; color: #2563eb; font-weight: 600;">กรรมการ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-content">
+          <h1>ร่วมเป็นส่วนหนึ่งของสมาพันธ์ SME ไทยสากล</h1>
+          <p>เปิดรับสมาชิกผู้ประกอบการทุกขนาด ทุกอุตสาหกรรม เพื่อร่วมกันขับเคลื่อนเศรษฐกิจอย่างยั่งยืน</p>
+        </div>
+        <div class="cta-actions">
+          <a href="register.html" class="btn-primary" style="padding: 14px 32px; font-size: 1.05rem;">
+            <span>สมัครสมาชิกสมาพันธ์</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <img src="assets/images/logo.jpg" alt="Logo">
+          <p class="footer-desc">
+            สมาพันธ์ SME ไทยสากล (International SME Federation of Thailand - ISME) เครือข่ายองค์กร SME
+            หลักของประเทศที่เข้มแข็ง เป็นเสาหลักในการพัฒนา SME ในทุกมิติ
+          </p>
+          <div class="top-bar-social" style="justify-content: flex-start;">
+            <a href="https://www.facebook.com/thaismefederation" target="_blank"><i
+                class="fa-brands fa-facebook-f"></i></a>
+
+            <a href="https://www.youtube.com/@smethai" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@smethai" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">ลิงก์ด่วน</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> หน้าหลัก</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> เกี่ยวกับสมาพันธ์</a></li>
+            <li><a href="news.html"><i class="fa-solid fa-chevron-right"></i> กิจกรรมและข่าวสาร</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> บริการสมาชิก</a></li>
+            <li><a href="register.html"><i class="fa-solid fa-chevron-right"></i> สมัครสมาชิก</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> ติดต่อเรา</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">บริการสมาชิก</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> สิทธิประโยชน์สมาชิก</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> ขั้นตอนการสมัคร</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> ที่ปรึกษาธุรกิจ SME</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> แหล่งเงินทุนและสินเชื่อ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">ติดต่อเรา</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>3186, 3188 ถนนลาดพร้าว แขวงคลองจั่น เขตบางกะปิ กรุงเทพมหานคร 10240</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>023999999</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 สมาพันธ์ SME ไทยสากล (ISME). สงวนลิขสิทธิ์ทุกประการ.</div>
+        <div>ขับเคลื่อนโดย <a href="https://smethai.or.th/" target="_blank">สมาพันธ์ SME ไทย</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+
+    <button class="float-btn float-btn-top" id="backToTopBtn" title="กลับขึ้นด้านบน">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script src="assets/js/database.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

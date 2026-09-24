@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!-- ==============================================================================
+     [ ไฟล์หน้าสมัครสมาชิก: register.html ]
+     ชื่อหน้า: แบบฟอร์มสมัครสมาชิกสมาพันธ์ (Member Registration)
+     คำอธิบาย: ระบบฟอร์มสมัครสมาชิกออนไลน์สำหรับผู้ประกอบการ SME ทั่วประเทศ
+     ============================================================================== -->
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สมัครสมาชิกสมาพันธ์ | สมาพันธ์ SME ไทยสากล - ISME</title>
+  <meta name="description" content="แบบฟอร์มสมัครสมาชิกสมาพันธ์ SME ไทยสากล (ISME) เข้าร่วมเครือข่ายธุรกิจที่เข้มแข็งและรับสิทธิประโยชน์รอบด้าน">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-contact">
+        <div class="top-bar-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>โทร: 
+          
+          <a href="https://www.youtube.com/@smethai" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@smethai" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo" title="สมาพันธ์ SME ไทยสากล">
+          <img src="assets/images/logo.jpg" alt="ISME สมาพันธ์ SME ไทยสากล">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> เกี่ยวกับสมาพันธ์</a></li>
+          <li><a href="news.html" class="nav-link"><i class="fa-solid fa-newspaper"></i> กิจกรรมและข่าวสาร</a></li>
+          <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i> บริการสมาชิก</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="register.html" class="btn-primary">
+            <span>สมัครสมาชิก</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="เปิดเมนู">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/images/logo.jpg" alt="Logo" style="height: 44px;">
+      <button class="drawer-close" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+      <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> เกี่ยวกับสมาพันธ์</a></li>
+      <li><a href="news.html" class="nav-link"><i class="fa-solid fa-newspaper"></i> กิจกรรมและข่าวประชาสัมพันธ์</a></li>
+      <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i> บริการสำหรับสมัครสมาชิก</a></li>
+      <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+    </ul>
+  </aside>
+
+  <!-- Inner Page Hero -->
+  <section class="inner-page-hero">
+    <div class="container">
+      <div class="inner-hero-content">
+        <span class="inner-hero-tag"><i class="fa-solid fa-user-plus"></i> MEMBERSHIP REGISTRATION</span>
+        <h1 class="inner-hero-title">แบบฟอร์มสมัครสมาชิกสมาพันธ์</h1>
+        <p class="inner-hero-subtitle">สมัครสมาชิกออนไลน์เพื่อรับสิทธิประโยชน์ การเข้าถึงแหล่งทุน โอกาสทางธุรกิจ และการดูแลอย่างใกล้ชิด</p>
+        <div class="inner-breadcrumb">
+          <a href="index.html"><i class="fa-solid fa-house"></i> หน้าหลัก</a>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+          <span>สมัครสมาชิก</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form Section -->
+  <section class="section-padding">
+    <div class="container" style="max-width: 900px;">
+      <div class="form-card">
+        
+        <div style="text-align: center; margin-bottom: 35px;">
+          <img src="assets/images/logo.jpg" alt="Logo" style="height: 65px; margin: 0 auto 15px auto;">
+          <h2 style="font-size: 1.8rem; color: var(--primary); font-weight: 700; margin-bottom: 8px;">ใบสมัครสมาชิกสมาพันธ์ SME ไทยสากล</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">กรุณากรอกข้อมูลให้ครบถ้วนเพื่อความรวดเร็วในการตรวจสอบและอนุมัติสิทธิประโยชน์</p>
+        </div>
+
+        <form id="memberRegisterForm">
+          
+          <!-- หมวดที่ 1: ข้อมูลผู้ประสานงาน / ผู้มีอำนาจ -->
+          <h3 style="font-size: 1.25rem; color: var(--primary); font-weight: 700; border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 20px;">
+            1. ข้อมูลผู้สมัคร / ผู้มีอำนาจลงนาม
+          </h3>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="regFullName">ชื่อ-นามสกุล <span class="req">*</span></label>
+              <input type="text" id="regFullName" class="form-control" placeholder="เช่น นายสมชาย ใจดี" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="regPosition">ตำแหน่งในธุรกิจ <span class="req">*</span></label>
+              <input type="text" id="regPosition" class="form-control" placeholder="เช่น กรรมการผู้จัดการ / เจ้าของกิจการ" required>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="regPhone">เบอร์โทรศัพท์มือถือ <span class="req">*</span></label>
+              <input type="tel" id="regPhone" class="form-control" placeholder="เช่น 081-234-5678" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="regEmail">อีเมล <span class="req">*</span></label>
+              <input type="email" id="regEmail" class="form-control" placeholder="เช่น somchai@company.co.th" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regLine">Line ID (ถ้ามี)</label>
+            <input type="text" id="regLine" class="form-control" placeholder="เช่น somchai_sme">
+          </div>
+
+          <!-- หมวดที่ 2: ข้อมูลธุรกิจ -->
+          <h3 style="font-size: 1.25rem; color: var(--primary); font-weight: 700; border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin: 30px 0 20px 0;">
+            2. ข้อมูลสถานประกอบการ / ธุรกิจ
+          </h3>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="regCompany">ชื่อบริษัท / ร้านค้า / กิจการ <span class="req">*</span></label>
+              <input type="text" id="regCompany" class="form-control" placeholder="เช่น บริษัท ก้าวหน้าพาณิชย์ จำกัด" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="regTaxId">เลขทะเบียนนิติบุคคล / เลขประจำตัวผู้เสียภาษี 13 หลัก <span class="req">*</span></label>
+              <input type="text" id="regTaxId" class="form-control" placeholder="เช่น 0105559012345" required>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="regBizType">ประเภทธุรกิจ <span class="req">*</span></label>
+              <select id="regBizType" class="form-control" required>
+                <option value="">-- กรุณาเลือกประเภท --</option>
+                <option value="manufacturing">ภาคการผลิต / โรงงานอุตสาหกรรม</option>
+                <option value="wholesale">ค้าส่ง / ค้าปลีก / ซัพพลายเออร์</option>
+                <option value="service">ภาคบริการ / โรงแรม / ท่องเที่ยว</option>
+                <option value="agriculture">เกษตรและอาหารแปรรูป</option>
+                <option value="tech">ดิจิทัล / ซอฟต์แวร์ / อีคอมเมิร์ซ</option>
+                <option value="other">อื่นๆ</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="regProvince">จังหวัดที่ตั้งสถานประกอบการ <span class="req">*</span></label>
+              <select id="regProvince" class="form-control" required>
+                <option value="">-- กรุณาเลือกจังหวัด --</option>
+                <option value="bangkok">กรุงเทพมหานคร</option>
+                <option value="chiangmai">เชียงใหม่</option>
+                <option value="korat">นครราชสีมา</option>
+                <option value="chonburi">ชลบุรี</option>
+                <option value="phuket">ภูเก็ต</option>
+                <option value="songkhla">สงขลา</option>
+                <option value="khonkaen">ขอนแก่น</option>
+                <option value="other_province">จังหวัดอื่นๆ (ครอบคลุม 77 จังหวัด)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regAddress">ที่อยู่สถานประกอบการ</label>
+            <textarea id="regAddress" rows="3" class="form-control" placeholder="เลขที่ ถนน แขวง/ตำบล เขต/อำเภอ รหัสไปรษณีย์"></textarea>
+          </div>
+
+          <!-- หมวดที่ 3: ความต้องการการสนับสนุน -->
+          <h3 style="font-size: 1.25rem; color: var(--primary); font-weight: 700; border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin: 30px 0 20px 0;">
+            3. บริการที่ท่านต้องการให้สมาพันธ์สนับสนุน
+          </h3>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 25px;">
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; cursor: pointer;">
+              <input type="checkbox" name="support_needs" value="training">
+              <span>การอบรมและพัฒนาทักษะธุรกิจ / AI</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; cursor: pointer;">
+              <input type="checkbox" name="support_needs" value="finance">
+              <span>การเข้าถึงแหล่งเงินกู้ / สินเชื่อดอกเบี้ยต่ำ</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; cursor: pointer;">
+              <input type="checkbox" name="support_needs" value="matching">
+              <span>การจับคู่เจรจาธุรกิจ (Business Matching)</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; cursor: pointer;">
+              <input type="checkbox" name="support_needs" value="export">
+              <span>การขยายตลาดต่างประเทศและการส่งออก</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; cursor: pointer;">
+              <input type="checkbox" name="support_needs" value="booth">
+              <span>โอกาสออกบูธแสดงสินค้าราคาพิเศษ</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; cursor: pointer;">
+              <input type="checkbox" name="support_needs" value="consult">
+              <span>คำปรึกษาทางกฎหมาย ภาษี และบัญชี</span>
+            </label>
+          </div>
+
+          <!-- เอกสารแนบ -->
+          <div class="form-group">
+            <label class="form-label" for="regFile">แนบเอกสาร (หนังสือรับรอง / ทะเบียนพาณิชย์ หรือสำเนาบัตรประชาชน)</label>
+            <input type="file" id="regFile" class="form-control" style="padding: 9px 12px;">
+            <small style="color: #64748b; font-size: 0.8rem; display: block; margin-top: 4px;">รองรับไฟล์ PDF, JPG, PNG ขนาดไม่เกิน 10MB</small>
+          </div>
+
+          <!-- นโยบายความเป็นส่วนตัว -->
+          <div style="margin: 25px 0;">
+            <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: #475569; cursor: pointer;">
+              <input type="checkbox" required style="margin-top: 4px;">
+              <span>ข้าพเจ้ายินยอมให้สมาพันธ์ SME ไทยสากลจัดเก็บและใช้ข้อมูลนี้เพื่อวัตถุประสงค์ในการสมัครสมาชิก การติดต่อประสานงาน และการรับสิทธิประโยชน์ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล (PDPA)</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; padding: 15px; font-size: 1.1rem; justify-content: center; border-radius: var(--radius-md);">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>ยืนยันการส่งใบสมัครสมาชิก</span>
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <img src="assets/images/logo.jpg" alt="Logo">
+          <p class="footer-desc">
+            สมาพันธ์ SME ไทยสากล (International SME Federation of Thailand - ISME)
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">ลิงก์ด่วน</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> หน้าหลัก</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> เกี่ยวกับสมาพันธ์</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> บริการสมาชิก</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> ติดต่อเรา</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">ติดต่อเรา</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>3186, 3188 ถนนลาดพร้าว แขวงคลองจั่น เขตบางกะปิ กรุงเทพมหานคร 10240</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>023999999</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 สมาพันธ์ SME ไทยสากล (ISME). สงวนลิขสิทธิ์ทุกประการ.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/database.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

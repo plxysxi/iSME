@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- ==============================================================================
+     [ ไฟล์หน้าติดต่อเรา: contact.html ]
+     ชื่อหน้า: ติดต่อเรา (Contact Us)
+     คำอธิบาย: ข้อมูลการติดต่อ แผนที่ตั้งสำนักงานใหญ่ แบบฟอร์มส่งข้อความ
+              และศูนย์ประสานงานภูมิภาค สมาพันธ์ SME ไทยสากล (ISME)
+     ============================================================================== -->
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อเรา | สมาพันธ์ SME ไทยสากล - ISME</title>
+  <meta name="description"
+    content="ช่องทางการติดต่อสมาพันธ์ SME ไทยสากล ที่อยู่สำนักงานใหญ่ แผนที่ เบอร์โทร อีเมล Line OA และศูนย์ประสานงานประจำภูมิภาค">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo" title="สมาพันธ์ SME ไทยสากล">
+          <img src="assets/images/logo.jpg" alt="ISME สมาพันธ์ SME ไทยสากล">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> เกี่ยวกับสมาพันธ์</a>
+          </li>
+          <li><a href="news.html" class="nav-link"><i class="fa-solid fa-newspaper"></i> กิจกรรมและข่าวสาร</a></li>
+          <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i> บริการสมาชิก</a></li>
+          <li><a href="contact.html" class="nav-link active"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="register.html" class="btn-primary">
+            <span>สมัครสมาชิก</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="เปิดเมนู">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/images/logo.jpg" alt="Logo" style="height: 44px;">
+      <button class="drawer-close" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+      <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> เกี่ยวกับสมาพันธ์</a></li>
+      <li><a href="news.html" class="nav-link"><i class="fa-solid fa-newspaper"></i> กิจกรรมและข่าวประชาสัมพันธ์</a>
+      </li>
+      <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i>
+          บริการสำหรับสมัครสมาชิก</a></li>
+      <li><a href="contact.html" class="nav-link active"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="register.html" class="btn-primary" style="width: 100%; justify-content: center;">
+        <span>สมัครสมาชิกสมาพันธ์</span>
+        <i class="fa-solid fa-user-plus"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Inner Page Hero -->
+  <section class="inner-page-hero">
+    <div class="container">
+      <div class="inner-hero-content">
+        <span class="inner-hero-tag"><i class="fa-solid fa-envelope"></i> CONTACT US</span>
+        <h1 class="inner-hero-title">ติดต่อเรา</h1>
+        <p class="inner-hero-subtitle">สมาพันธ์ SME ไทยสากล ยินดีให้บริการ ตอบข้อซักถาม และให้คำปรึกษาแก่ผู้ประกอบการทุกคน
+        </p>
+        <div class="inner-breadcrumb">
+          <a href="index.html"><i class="fa-solid fa-house"></i> หน้าหลัก</a>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+          <span>ติดต่อเรา</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Cards Section -->
+  <section class="section-padding">
+    <div class="container">
+
+      <div class="contact-info-grid">
+        <!-- Card 1: Address -->
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 8px;">สำนักงานใหญ่</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+            3186, 3188 ถนนลาดพร้าว แขวงคลองจั่น เขตบางกะปิ กรุงเทพมหานคร 10240
+          </p>
+        </div>
+
+        <!-- Card 2: Phone -->
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 8px;">ช่องทางการติดต่อ
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+            <strong>โทรศัพท์:</strong> 023999999
+          </p>
+        </div>
+
+        <!-- Card 3: Working Hours -->
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fa-regular fa-clock"></i></div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 8px;">เวลาทำการ</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+            <strong>จันทร์ - ศุกร์:</strong> 09:00 - 18:00 น.<br>
+            <strong>เสาร์:</strong> 09:00 - 13:00 น.<br>
+            <span style="color: #ef4444;">ปิดทำการวันอาทิตย์และวันหยุดนักขัตฤกษ์</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Form & Map Grid -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px;">
+
+        <!-- Contact Form -->
+        <div class="form-card" style="padding: 35px;">
+          <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 8px;">ส่งข้อความถึงเรา
+          </h3>
+          <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 25px;">กรอกแบบฟอร์มด้านล่าง
+            เจ้าหน้าที่จะติดต่อกลับภายใน 24 ชั่วโมง</p>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="contactName">ชื่อ-นามสกุล <span class="req">*</span></label>
+              <input type="text" id="contactName" class="form-control" placeholder="กรุณาระบุชื่อของคุณ" required>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">เบอร์โทรศัพท์ <span class="req">*</span></label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="เช่น 081-234-5678" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">อีเมล <span class="req">*</span></label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="name@domain.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">เรื่องที่ต้องการติดต่อ <span class="req">*</span></label>
+              <select id="contactSubject" class="form-control" required>
+                <option value="">-- กรุณาเลือกหัวข้อ --</option>
+                <option value="member">สอบถามข้อมูลการสมัครสมาชิก</option>
+                <option value="consult">ขอรับคำปรึกษาทางธุรกิจ</option>
+                <option value="partner">เสนอความร่วมมือทางธุรกิจ / ประชาสัมพันธ์</option>
+                <option value="event">สอบถามกิจกรรมและงานสัมมนา</option>
+                <option value="other">เรื่องอื่นๆ</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">ข้อความ <span class="req">*</span></label>
+              <textarea id="contactMessage" rows="4" class="form-control"
+                placeholder="รายละเอียดข้อความที่ต้องการส่งถึงสมาพันธ์" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary"
+              style="width: 100%; padding: 13px; font-size: 1rem; justify-content: center; border-radius: var(--radius-sm);">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>ส่งข้อความ</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Google Map & Regional Info -->
+        <div>
+          <div class="map-frame-box" style="margin-bottom: 25px;">
+            <iframe
+              src="https://maps.google.com/maps?q=3186%2C+3188+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%A7+%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B9%88%E0%B8%99+%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B0%E0%B8%9B%E0%B8%B4+%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3+10240&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="แผนที่ตั้ง สมาพันธ์ SME ไทยสากล">
+            </iframe>
+          </div>
+
+          <!-- Social Box -->
+          <div
+            style="background: #ffffff; padding: 25px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);">
+            <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 12px;">
+              ติดตามเราบนโซเชียลมีเดีย</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">ติดตามข่าวสาร กิจกรรม
+              และความรู้ที่เป็นประโยชน์สำหรับ SME แบบเรียลไทม์</p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="https://www.facebook.com/thaismefederation" target="_blank" class="btn-primary"
+                style="background: #1877f2; color: #fff; font-size: 0.85rem; padding: 8px 16px;">
+                <i class="fa-brands fa-facebook-f"></i> Facebook
+              </a>
+
+              <a href="https://www.youtube.com/@smethai" target="_blank" class="btn-primary"
+                style="background: #ff0000; color: #fff; font-size: 0.85rem; padding: 8px 16px;">
+                <i class="fa-brands fa-youtube"></i> YouTube
+              </a>
+              <a href="https://www.tiktok.com/@smethai" target="_blank" class="btn-primary"
+                style="background: #000000; color: #fff; font-size: 0.85rem; padding: 8px 16px;">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Regional Offices Removed -->
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <img src="assets/images/logo.jpg" alt="Logo">
+          <p class="footer-desc">
+            สมาพันธ์ SME ไทยสากล (International SME Federation of Thailand - ISME) เครือข่ายองค์กร SME
+            หลักของประเทศที่เข้มแข็ง
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">ลิงก์ด่วน</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> หน้าหลัก</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> เกี่ยวกับสมาพันธ์</a></li>
+            <li><a href="news.html"><i class="fa-solid fa-chevron-right"></i> กิจกรรมและข่าวสาร</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> บริการสมาชิก</a></li>
+            <li><a href="register.html"><i class="fa-solid fa-chevron-right"></i> สมัครสมาชิก</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> ติดต่อเรา</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">ติดต่อเรา</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>3186, 3188 ถนนลาดพร้าว แขวงคลองจั่น เขตบางกะปิ กรุงเทพมหานคร 10240</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>023999999</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 สมาพันธ์ SME ไทยสากล (ISME). สงวนลิขสิทธิ์ทุกประการ.</div>
+        <div>ขับเคลื่อนโดย <a href="https://smethai.or.th/" target="_blank">สมาพันธ์ SME ไทย</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+
+    <button class="float-btn float-btn-top" id="backToTopBtn" title="กลับขึ้นด้านบน">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script src="assets/js/database.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

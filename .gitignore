@@ -1,0 +1,6 @@
+# Temporary / Python scratch files
+*.py
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db

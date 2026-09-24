@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!-- ==============================================================================
+     [ ไฟล์หน้ากิจกรรมและข่าวประชาสัมพันธ์: news.html ]
+     ชื่อหน้า: กิจกรรมและข่าวประชาสัมพันธ์ (News & Activities)
+     คำอธิบาย: หน้ารวมข่าวสาร กิจกรรม บทความ และการประชาสัมพันธ์ของสมาพันธ์ SME ไทย
+     ============================================================================== -->
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>กิจกรรมและข่าวประชาสัมพันธ์ | สมาพันธ์ SME ไทยสากล - ISME</title>
+  <meta name="description"
+    content="อัปเดตข้อมูล ข่าวสาร บทความ และกิจกรรมที่เป็นประโยชน์จากสมาพันธ์ SME ไทย เพื่อยกระดับผู้ประกอบการทั่วประเทศ">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo" title="สมาพันธ์ SME ไทยสากล">
+          <img src="assets/images/logo.jpg" alt="ISME สมาพันธ์ SME ไทยสากล">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> เกี่ยวกับสมาพันธ์</a>
+          </li>
+          <li><a href="news.html" class="nav-link active"><i class="fa-solid fa-newspaper"></i> กิจกรรมและข่าวสาร</a>
+          </li>
+          <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i> บริการสมาชิก</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="register.html" class="btn-primary">
+            <span>สมัครสมาชิก</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="เปิดเมนู">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/images/logo.jpg" alt="Logo" style="height: 44px;">
+      <button class="drawer-close" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+      <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> เกี่ยวกับสมาพันธ์</a></li>
+      <li><a href="news.html" class="nav-link active"><i class="fa-solid fa-newspaper"></i>
+          กิจกรรมและข่าวประชาสัมพันธ์</a></li>
+      <li><a href="services.html" class="nav-link"><i class="fa-solid fa-handshake-angle"></i>
+          บริการสำหรับสมัครสมาชิก</a></li>
+      <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> ติดต่อเรา</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="register.html" class="btn-primary" style="width: 100%; justify-content: center;">
+        <span>สมัครสมาชิกสมาพันธ์</span>
+        <i class="fa-solid fa-user-plus"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Inner Page Hero -->
+  <section class="inner-page-hero">
+    <div class="container">
+      <div class="inner-hero-content">
+        <span class="inner-hero-tag"><i class="fa-solid fa-bullhorn"></i> EVENTS & NEWS</span>
+        <h1 class="inner-hero-title">กิจกรรมและข่าวประชาสัมพันธ์</h1>
+        <p class="inner-hero-subtitle">อัปเดตข้อมูล ข่าวสาร บทความ และกิจกรรมสำคัญจากสมาพันธ์ SME ไทยสากล</p>
+        <div class="inner-breadcrumb">
+          <a href="index.html"><i class="fa-solid fa-house"></i> หน้าหลัก</a>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+          <span>กิจกรรมและข่าวประชาสัมพันธ์</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News List & Filters Section -->
+  <section class="section-padding">
+    <div class="container">
+
+
+      <!-- Articles Grid -->
+      <div class="news-grid" id="newsGridContainer">
+
+        <!-- Article 1 -->
+        <div class="news-item-col" data-category="economy">
+          <article class="news-card">
+            <div class="news-thumb-wrapper">
+              <img src="assets/images/news1.jpg" alt="ยกระดับ SME ไทย สู่อุตสาหกรรมฆ่าเชื้อและสุขอนามัยมาตรฐานสากล">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span><i class="fa-regular fa-calendar"></i> 20 มีนาคม 2569</span>
+                <span><i class="fa-regular fa-eye"></i> 1,420 อ่าน</span>
+              </div>
+              <h3 class="news-title">
+                <a href="news-detail.html?id=1">ยกระดับ SME ไทย สู่อุตสาหกรรมฆ่าเชื้อและสุขอนามัยมาตรฐานสากล</a>
+              </h3>
+              <p class="news-summary">
+                ความต้องการมาตรฐานด้านสุขอนามัยระดับโลกพุ่งสูง ผู้ประกอบการ SME ไทยเร่งปรับตัว นำเทคโนโลยีฆ่าเชื้อที่ทันสมัยมาใช้ในกระบวนการผลิตเพื่อสร้างความเชื่อมั่นแก่คู่ค้าสากล
+              </p>
+              <div class="news-footer">
+                <a href="news-detail.html?id=1" class="read-more-btn">
+                  <span>อ่านต่อฉบับเต็ม</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="news-item-col" data-category="activities">
+          <article class="news-card">
+            <div class="news-thumb-wrapper" style="background: #ffffff;">
+              <img src="assets/images/news-keyman.png" alt="ISME จับมือ LMS keymanacademy.com" style="object-fit: contain; padding: 15px;">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span><i class="fa-regular fa-calendar"></i> 15 มีนาคม 2569</span>
+                <span><i class="fa-regular fa-eye"></i> 1,890 อ่าน</span>
+              </div>
+              <h3 class="news-title">
+                <a href="news-detail.html?id=2">ISME จับมือ LMS keymanacademy.com มอบสิทธิ์อบรมสัมมนาฟรีตลอดปีแก่สมาชิก</a>
+              </h3>
+              <p class="news-summary">
+                เดินหน้าเสริมแกร่งผู้ประกอบการไทย สมาพันธ์ฯ เปิดตัวความร่วมมือกับแพลตฟอร์ม e-Learning ชั้นนำ keymanacademy.com ให้สมาชิกเรียนคอร์สธุรกิจ การเงิน และเทคโนโลยีฟรีตลอดทั้งปี
+              </p>
+              <div class="news-footer">
+                <a href="news-detail.html?id=2" class="read-more-btn">
+                  <span>อ่านต่อฉบับเต็ม</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="news-item-col" data-category="international">
+          <article class="news-card">
+            <div class="news-thumb-wrapper">
+              <img src="assets/images/news3.jpg" alt="เจรจาการค้า ผลิตภัณฑ์ฆ่าเชื้อสู่สากล">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span><i class="fa-regular fa-calendar"></i> 10 มีนาคม 2569</span>
+                <span><i class="fa-regular fa-eye"></i> 1,150 อ่าน</span>
+              </div>
+              <h3 class="news-title">
+                <a href="news-detail.html?id=3">เจรจาการค้า: ขยายตลาดผลิตภัณฑ์ทำความสะอาดและฆ่าเชื้อสู่สากล</a>
+              </h3>
+              <p class="news-summary">
+                เตรียมความพร้อมผู้ประกอบการ SME ไทยในกลุ่มผลิตภัณฑ์ทำความสะอาดและน้ำยาฆ่าเชื้อ เพื่อบุกตลาดการค้าต่างประเทศและกลุ่มประเทศอาเซียน-ยุโรป
+              </p>
+              <div class="news-footer">
+                <a href="news-detail.html?id=3" class="read-more-btn">
+                  <span>อ่านต่อฉบับเต็ม</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="news-item-col" data-category="vision">
+          <article class="news-card">
+            <div class="news-thumb-wrapper">
+              <img src="assets/images/banner1.jpg" alt="วิสัยทัศน์ ISME 2026">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span><i class="fa-regular fa-calendar"></i> 5 มีนาคม 2569</span>
+                <span><i class="fa-regular fa-eye"></i> 2,340 อ่าน</span>
+              </div>
+              <h3 class="news-title">
+                <a href="news-detail.html?id=4">วิสัยทัศน์ ISME 2026: ยกระดับศักยภาพ SME ไทยสู่เวทีโลกอย่างยั่งยืน</a>
+              </h3>
+              <p class="news-summary">
+                นายสิษฐพงศ์ วามะศิริภัทร นายกสมาคมฯ เผยแผนยุทธศาสตร์ 3 เสาหลัก: Digital Transformation, Standard Elevation, และ Global Networking เพื่อเสริมพลังธุรกิจไทย
+              </p>
+              <div class="news-footer">
+                <a href="news-detail.html?id=4" class="read-more-btn">
+                  <span>อ่านต่อฉบับเต็ม</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="news-item-col" data-category="activities">
+          <article class="news-card">
+            <div class="news-thumb-wrapper">
+              <img src="assets/images/about-intro.jpg" alt="ISME สัญจร">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span><i class="fa-regular fa-calendar"></i> 28 กุมภาพันธ์ 2569</span>
+                <span><i class="fa-regular fa-eye"></i> 890 อ่าน</span>
+              </div>
+              <h3 class="news-title">
+                <a href="news-detail.html?id=5">ISME สัญจร: เชื่อมโยงเครือข่ายผู้ประกอบการและสร้างมาตรฐานสุขอนามัยทั่วไทย</a>
+              </h3>
+              <p class="news-summary">
+                รวมพลังสมาชิกผู้ประกอบการ แลกเปลี่ยนองค์ความรู้ด้านมาตรฐานการผลิต นวัตกรรมสุขอนามัย และการขยายช่องทางจัดจำหน่ายสินค้าสู่ตลาดโมเดิร์นเทรด
+              </p>
+              <div class="news-footer">
+                <a href="news-detail.html?id=5" class="read-more-btn">
+                  <span>อ่านต่อฉบับเต็ม</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="news-item-col" data-category="economy">
+          <article class="news-card">
+            <div class="news-thumb-wrapper">
+              <img src="assets/images/banner2.jpg" alt="เปิดรับสมัครสมาชิก ISME">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span><i class="fa-regular fa-calendar"></i> 18 กุมภาพันธ์ 2569</span>
+                <span><i class="fa-regular fa-eye"></i> 1,650 อ่าน</span>
+              </div>
+              <h3 class="news-title">
+                <a href="news-detail.html?id=6">เปิดรับสมัครสมาชิกสมาคมสมาพันธ์เอสเอ็มอีไทยสากล พร้อมรับสิทธิประโยชน์ครบวงจร</a>
+              </h3>
+              <p class="news-summary">
+                เชิญชวนผู้ประกอบการทุกขนาดและทุกอุตสาหกรรมร่วมเครือข่าย รับสิทธิ์เข้าถึงคอร์สเรียนฟรีผ่าน LMS keymanacademy.com, แหล่งเงินทุนดอกเบี้ยพิเศษ และการขยายตลาดต่างประเทศ
+              </p>
+              <div class="news-footer">
+                <a href="news-detail.html?id=6" class="read-more-btn">
+                  <span>อ่านต่อฉบับเต็ม</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div style="display: flex; justify-content: center; gap: 8px; margin-top: 50px;">
+        <button class="filter-tab active" style="min-width: 42px; padding: 8px 14px;">1</button>
+        <button class="filter-tab" style="min-width: 42px; padding: 8px 14px;">2</button>
+        <button class="filter-tab" style="min-width: 42px; padding: 8px 14px;">3</button>
+        <button class="filter-tab" style="min-width: 42px; padding: 8px 14px;"><i
+            class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <img src="assets/images/logo.jpg" alt="Logo">
+          <p class="footer-desc">
+            สมาพันธ์ SME ไทยสากล (International SME Federation of Thailand - ISME) เครือข่ายองค์กร SME
+            หลักของประเทศที่เข้มแข็ง เป็นเสาหลักในการพัฒนา SME ในทุกมิติ
+          </p>
+          <div class="top-bar-social" style="justify-content: flex-start;">
+            <a href="https://www.facebook.com/thaismefederation" target="_blank"><i
+                class="fa-brands fa-facebook-f"></i></a>
+
+            <a href="https://www.youtube.com/@smethai" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@smethai" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">ลิงก์ด่วน</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> หน้าหลัก</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> เกี่ยวกับสมาพันธ์</a></li>
+            <li><a href="news.html"><i class="fa-solid fa-chevron-right"></i> กิจกรรมและข่าวสาร</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> บริการสมาชิก</a></li>
+            <li><a href="register.html"><i class="fa-solid fa-chevron-right"></i> สมัครสมาชิก</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> ติดต่อเรา</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">บริการสมาชิก</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> สิทธิประโยชน์สมาชิก</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> ขั้นตอนการสมัคร</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> ที่ปรึกษาธุรกิจ SME</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> แหล่งเงินทุนและสินเชื่อ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">ติดต่อเรา</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>3186, 3188 ถนนลาดพร้าว แขวงคลองจั่น เขตบางกะปิ กรุงเทพมหานคร 10240</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>023999999</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 สมาพันธ์ SME ไทยสากล (ISME). สงวนลิขสิทธิ์ทุกประการ.</div>
+        <div>ขับเคลื่อนโดย <a href="https://smethai.or.th/" target="_blank">สมาพันธ์ SME ไทย</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+
+    <button class="float-btn float-btn-top" id="backToTopBtn" title="กลับขึ้นด้านบน">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script src="assets/js/database.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
